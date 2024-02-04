@@ -1,0 +1,351 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    border: none;
+    text-decoration: none;
+}
+body {
+    height: 100vh;
+}
+.form-area{
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.form-area .logo{
+    margin: 0 0 10px;
+    padding: 10px 0px;
+}
+
+form input[type=text], form input[type=password] {
+    padding: 9px 0 7px 9px;
+    border: 0.5px solid rgb(219, 219, 219);
+    background-color: white;
+    font-size: 12px;
+    width: 80%;
+    margin-bottom: 10px !important;
+}
+
+form input[type=submit] {
+    padding: 5px 16px;
+    background-color: rgba(0, 149, 246,.7);
+    font-size: 12px;
+    width: 80%;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-bottom: 10px !important;
+}
+
+form .other-option div {
+    width: 110px;
+    height: 1px;
+    margin: 10px;
+    background-color: rgb(219, 219, 219);
+}
+form .other-option p {
+    text-align: center;
+}
+
+form .options {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+form .options .social{
+    color: #385185;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center !important;
+    text-decoration: none;
+}
+.forget {
+    margin: 10px 0;
+    text-align: center;
+    background-color: white;
+}
+svg{
+    font-size: 19px;
+}
+.forget a{
+    font-size: 12px;
+    cursor: pointer;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+}
+.col-2{
+    width: 355px !important;
+} */
+
+
+*:focus {
+    outline: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    border: none;
+    text-decoration: none;
+}
+:root {
+    --cl-white: #fafafa;
+    --cl-gray-dark: #868585;
+    --bg-blue: #63c7e6;
+    --cl-gray-light: #dbdbdb;
+    --bg-white: #ffffff;
+}
+body {
+    margin: 32px auto;
+    max-width: 935px;
+    padding-bottom: 20px;
+    background-color: var(--cl-white);
+    color: var(--cl-gray-dark);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* SMARTPHONE */
+.smartphone {
+    margin-left: -90px;
+}
+.smartphone .screen {
+    position: absolute;
+    margin: 25px 0 0 160px;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}  
+@keyframes fade {
+    from {opacity: .8}
+    to {opacity: 1}
+}
+/* FORM */
+.form-area {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 15px;
+}
+.form-area .logo {
+    width: 355px;
+    /* padding: 40px; */
+    text-align: center;
+    margin-bottom: 0;
+    background-color: var(--bg-white);
+    border: 1px solid var(--cl-gray-light);
+    border-bottom: 0;
+    margin: 0 0 10px;
+    padding: 35px;
+}
+.form-area .logo i {
+    margin-top: 10px;
+    background-image: url("https://static.cdninstagram.com/rsrc.php/v3/yM/r/8n91YnfPq0s.png"); 
+    background-position: 0px -52px; 
+    background-size: auto; 
+    width: 175px; 
+    height: 51px; 
+    background-repeat: no-repeat; 
+    display: inline-block;
+}
+.form-area form {
+    display: flex;
+    flex-direction: column;
+    width: 355px;
+    align-items: center;
+    background-color: var(--bg-white);
+    border: 1px solid var(--cl-gray-light);
+    border-top: 0;
+    padding-bottom: 20px;
+}
+.form-area form input {
+    border-radius: 4px;
+    width: 280px;
+}
+
+.password{
+    display: flex;
+    width: 107%;
+    margin-left: 15px;
+}
+.password i{
+    position: relative;
+    left: -70px;
+    top: 5px;
+}
+
+form input[type=text], form input[type=password] {
+    padding: 9px 0 7px 9px;
+    border: 0.5px solid rgb(219, 219, 219);
+    background-color: white;
+    font-size: 12px;
+    width: 80%;
+    margin-bottom: 8px !important;
+}
+.form-area form input[type=submit] {
+    padding: 8px 10px;
+    margin: 8px 40px;
+    background-color: rgba(0, 149, 246,.7);
+    font-size: 14px;
+    color: var(--bg-white);
+    font-weight: bold;
+    border-radius: 8px;
+}
+.form-area form input[type=submit]:hover { 
+    background-color: var(--bg-blue);
+    cursor: pointer;
+}
+form .other-option {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0; 
+    color: var(--cl-gray-dark);
+    font-weight: 700;
+    font-size: 14px;
+}
+form .other-option div {
+    width: 110px;
+    height: 1px;
+    background-color: var(--cl-gray-light);
+    margin: 6px 16px;
+}
+form .options {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+form .options .social{
+    color: #385185;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center !important;
+    text-decoration: none;
+}
+form .input-filed{
+   font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   margin: 0px 40px 6px;
+}
+form .options .social:hover { 
+    color: #3f37ad; 
+}
+form .options .forget {
+    margin-top: 22px;
+}
+form .options .forget a {
+    color: black;
+    font-size: 12px;
+}
+.form-area .noaccount {
+    width: 355px;
+    margin: 10px 0;
+    padding: 22px;
+    text-align: center;
+    background-color: var(--bg-white);
+    border: 1px solid var(--cl-gray-light);
+    font-size: 14px;
+}
+.form-area .noaccount a {
+    color: black;
+}
+.form-area .noaccount a span {
+    color: rgb(0, 149, 246);
+    font-weight: 600;
+}
+.form-area .apps {
+    text-align: center;
+    width: 355px;
+    margin-top: 10px;
+    color: var(--cl-gray-dark);
+}
+.form-area .apps img {
+    height: 40px;
+    margin-top: 15px;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+    font-size: 14px;
+}
+footer a {
+    font-size: 14px;
+    color: var(--cl-gray-dark);
+    margin: 5px 4px;
+}
+footer .footer-content {
+     margin-bottom: 5px; 
+}
+footer .footer-content a{
+    font-size: 12px;
+    color: var(--cl-gray-dark);
+}
+footer .copyright {
+    margin-top: 20px;
+}
+footer .copyright select {
+    background: none;
+    color: var(--cl-gray-dark);
+    border: none;
+    width: 70px;
+}
+@media screen and (max-width:840px) {
+    body {
+        max-width: 100%;
+    }
+    .smartphone {
+        margin-left: -50px;
+    }
+}
+@media screen and (height > 700px) {
+    footer {
+        position: absolute;
+        bottom: 30px;
+        padding-bottom: 50px;
+        text-align: center;
+        font-size: 14px;    
+    }
+}
+@media screen and (max-width:800px) {
+    .smartphone {
+       display: none;
+    }
+    .form-area {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:435px) {
+    .form-area .logo {
+        width: 100%;
+        margin: auto;
+        padding: 10px auto;
+        background-color: transparent;
+        border: none;
+    }
+    .form-area form {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-top: 0;
+    }
+    .form-area .noaccount {
+        width: 100%;
+        margin: 0;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+svg{
+    font-size: 18px;
+}
+
+.blue{
+    background-color: rgb(0, 149, 246) !important;
+}
